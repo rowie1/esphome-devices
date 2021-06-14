@@ -178,7 +178,7 @@ binary_sensor:
             then:
               - fan.turn_on:
                   id: fan_1
-                  speed: MEDIUM
+                  speed: 66
         - if:
             condition:
               and:
@@ -188,7 +188,7 @@ binary_sensor:
             then:
               - fan.turn_on:
                   id: fan_1
-                  speed: HIGH
+                  speed: 100
         - if:
             condition:
               and:
@@ -198,7 +198,7 @@ binary_sensor:
             then:
               - fan.turn_on:
                   id: fan_1
-                  speed: LOW
+                  speed: 33
 
 fan:
   - platform: speed
@@ -241,7 +241,7 @@ switch:
             then:
               - fan.turn_on:
                   id: fan_1
-                  speed: LOW
+                  speed: 33
         - if:
             condition:
               and:
@@ -251,7 +251,7 @@ switch:
             then:
               - fan.turn_on:
                   id: fan_1
-                  speed: MEDIUM
+                  speed: 66
         - if:
             condition:
               and:
@@ -261,6 +261,6 @@ switch:
             then:
               - fan.turn_on:
                   id: fan_1
-                  speed: HIGH
+                  speed: 100
 
 ```
